@@ -1,0 +1,76 @@
+body {
+    font-family: 'Spectral', serif;
+}
+
+#main_nav .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#main_nav .nav-link {
+    color: black;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+h2, p {
+    color: black;
+}
+
+hr	{
+	width: 500px;
+	/*borders here create a shadow beneatht the hr*/
+	border-top: 1px solid black;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+section {
+    color: white;
+    font-weight: 100;
+    font-size: 2rem;
+    height: 100vh;
+}
+
+#section1 {
+    background: url(https://images.unsplash.com/photo-1549321495-305eb13f8aa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#section2 {
+    background: grey;
+}
+
+#section3 {
+    background: #779ecb;
+}
+
+#section4 {
+    background: grey;
+}
+
+/* background change on hover */
+#main_nav .nav-link:hover {
+    color: #779ecb;
+}
+
+/* # points to an id */
+#heading span {
+    color: grey;
+}
+
+/* change background of navbar when scrolling */
+.navbar.scrolled {
+    background: grey;
+    transition: background 500ms;
+}
+
+/* media queries are used to change content when screen is a certain size  */
+@media (max-width: 1400px) {
+    #heading h2 {
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+}
