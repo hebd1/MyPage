@@ -18,26 +18,29 @@
 <body>
     <!-- fixed top fixes navbar on scroll -->
     <nav id="main_nav" class="navbar navbar-dark navbar-expand-md fixed-top">
-        <i class="fas fa-laptop-code fa-2x"></i>
+        
         <!-- aria label is used for screen readers -->
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav_links" aria-label="Toggle Navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_toggler" aria-controls="navbar_toggler" aria-expanded="false" aria-label="Toggle Navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="nav_links">
-            <ul class="navbar-nav">
+
+        <a class="navbar-brand" href="#"><i class="fas fa-laptop-code fa-2x"></i></a>
+
+        <div class="collapse navbar-collapse" id="navbar_toggler">
+            <div class="navbar-nav mr-auto">
                 <li>
-                    <a href="#section1" class="nav-link">HOME</a>
+                    <a href="#section1" class="nav-item nav-link active">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <li>
-                    <a href="#section2" class="nav-link">ABOUT</a>
+                    <a href="#section2" class="nav-item nav-link">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#section3" class="nav-link">PROJECTS</a>
+                    <a href="#section3" class="nav-item nav-link">PROJECTS</a>
                 </li>
                 <li>
-                        <a href="#section4" class="nav-link">RESUME</a>
+                    <a href="#section4" class="nav-item nav-link">RESUME</a>
                 </li>
-            </ul>
+            </div>
         </div>
     </nav>
 
@@ -54,11 +57,11 @@
             </div>
             <div class="col-md-6 text-center order-2 order-md-1">
                 <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 mb-5 mb-md-0">
+                    <div class="col-10 col-lg-8 mb-10 mb-md-0">
                         <h2 style="font-size: 4rem">Eli Hebdon</h2>
                         <hr>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo,
-                            veniam illo neque recusandae, modi harum blanditiis ipsum !</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo,
+                            veniam illo, modi harum blanditiis ipsum !</p>
                     </div>
                 </div>
             </div>
@@ -86,9 +89,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script> -->
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -97,6 +100,7 @@
         crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
     <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links
@@ -132,6 +136,8 @@
             })
         })
     </script>
+
+    
 
 
 </body>

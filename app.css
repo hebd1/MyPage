@@ -2,11 +2,6 @@ body {
     font-family: 'Spectral', serif;
 }
 
-#main_nav .navbar-brand {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 100;
-}
 
 #main_nav .nav-link {
     color: black;
@@ -14,8 +9,18 @@ body {
     padding-left: 30px;
 }
 
-h2, p {
+h2 {
     color: black;
+}
+
+i {
+    color: black;
+}
+
+p {
+    font-size: 1.75rem;
+    color: black;
+    font-weight: 300;
 }
 
 hr	{
@@ -61,6 +66,7 @@ section {
     color: grey;
 }
 
+
 /* change background of navbar when scrolling */
 .navbar.scrolled {
     background: grey;
@@ -72,5 +78,11 @@ section {
     #heading h2 {
         font-weight: 100;
         font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    nav {
+        background-color: grey;
     }
 }
