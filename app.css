@@ -28,7 +28,7 @@ p {
 }
 
 hr	{
-	width: 500px;
+	width: 250px;
 	/*borders here create a shadow beneatht the hr*/
 	border-top: 1px solid black;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -102,20 +102,43 @@ section {
 }
 
 /* media queries are used to change content when screen is a certain size  */
-@media (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
     #heading h2 {
         font-weight: 100;
         font-size: 1.5rem;
     }
+    #about {
+        font-size: 20px;
+    }
+    
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px){
+    #about {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
     .column {
       -ms-flex: 50%;
       flex: 50%;
       max-width: 50%;
     }
+    #about {
+        font-size: 20px;
+    }
   }
+
+  @media only screen and (min-width:701px){
+    #about_mobile {
+        display: none;
+    }
+    hr {
+        width: 250px;
+    }
+}
 
   /* Mobile configurations */
 @media only screen and (max-width:700px) {
@@ -158,7 +181,7 @@ section {
         display: none;
     }
     #about_mobile {
-        display: block;
+        display: flex;
         font-size: 16px;
     }
 }
