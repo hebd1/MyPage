@@ -25,7 +25,7 @@ p {
     font-size: 1.75rem;
     color: black;
     font-weight: 300;
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-weight: bold;
 }
 
@@ -229,4 +229,5 @@ section {
         padding-top: 5rem;
         margin-top: 4rem;
     }
+   
 }
