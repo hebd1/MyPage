@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -18,9 +18,10 @@
 <body>
     <!-- fixed top fixes navbar on scroll -->
     <nav id="main_nav" class="navbar navbar-dark navbar-expand-md fixed-top">
-        
+
         <!-- aria label is used for screen readers -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_toggler" aria-controls="navbar_toggler" aria-expanded="false" aria-label="Toggle Navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_toggler"
+            aria-controls="navbar_toggler" aria-expanded="false" aria-label="Toggle Navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -49,11 +50,7 @@
     <section id="section1" style="margin: auto" class="row align-items-center justify-content-center">
         <div style="text-align: center" class="row align-items-center" style="margin-top: 50px">
             <div class="col-md-6 order-1 order-md-2">
-                <img class="img-fluid"
-                    src="imgs/me.png"
-                    width="500"
-                    height="500"
-                    alt="">
+                <img id="headshot" class="img-fluid" src="imgs/me.png" width="500" height="500" alt="">
             </div>
             <div class="col-md-6 text-center order-2 order-md-1">
                 <div class="row justify-content-center">
@@ -61,7 +58,7 @@
                         <h2>Eli Hebdon</h2>
                         <hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo,
-                            veniam illo, modi harum blanditiis ipsum !</p>
+                            veniam illo, blanditiis ipsum !</p>
                     </div>
                 </div>
             </div>
@@ -69,21 +66,46 @@
     </section>
 
     <section id="section2" class="container-fluid px-0">
-        <div class="row align-items-center">
-           
-        </div>
-    </section>
-
-    <section  id="section3" class="container-fluid px-0 main">
-        <div class="row align-items-center">
-           
-        </div>
-    </section>
-
-    <section  id="section4" class="container-fluid px-0 main">
-            <div class="row align-items-center">
-               
+        <div style="text-align: center" class="row align-items-center" style="margin-top: 50px">
+            <div class="col-md-6 order-2 order-md-1">
+                <div class="row"> 
+                    <div class="column">
+                      <img id="camping_img" src="imgs/camping.jpg" style="width:100%">
+                    </div>
+                    <div  id="photo_grid" class="column">
+                      <img src="imgs/london.jpeg" style="width:100%">
+                      <img src="imgs/waterfall.jpg" style="width:100%">
+                    </div>  
+                </div>
             </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 mb-10 mb-md-0">
+                        <p>I’m a computer science major with a passion for solving difficult problems with technology. I
+                            love learning both in and out of school. In my free time I enjoy coding mobile android
+                            applications and publishing them to the Google Play Store. Whether I’m heading
+                            up a project or a part of a group, I love being part of a team because that’s where I always
+                            learn the most. I’m also a HackTheU team member. Once a year, we host the largest hackathon
+                            in Utah. My responsibilities on the team include Marketing and Design and Website
+                            maintenance.
+                            I’m here because I’m eager to apply my skills to the industry and challenge myself.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section3" class="container-fluid px-0 main">
+        <div class="row align-items-center">
+
+        </div>
+    </section>
+
+    <section id="section4" class="container-fluid px-0 main">
+        <div class="row align-items-center">
+
+        </div>
     </section>
 
 
@@ -100,7 +122,7 @@
         crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
+
     <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links
@@ -130,14 +152,14 @@
 
     <script>
         $(function () {
-            $(document).scroll(function() {
+            $(document).scroll(function () {
                 var $nav = $("#main_nav");
-                $nav.toggleClass("scrolled",$(this).scrollTop() > $nav.height());
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
             })
         })
     </script>
 
-    
+
 
 
 </body>

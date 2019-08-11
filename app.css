@@ -22,6 +22,7 @@ p {
     font-size: 1.75rem;
     color: black;
     font-weight: 300;
+    margin-top: 3rem;
 }
 
 hr	{
@@ -38,12 +39,35 @@ section {
     height: 100vh;
 }
 
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 2px;
+    margin-top: 3rem;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
 #section1 {
     background: url(https://images.unsplash.com/photo-1549321495-305eb13f8aa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
     background-size: cover;
 	background-repeat: no-repeat;
-    background-position: center;
-    vertical-align: bottom;
+    /* background-position: center;
+    vertical-align: bottom; */
 }
 
 #section2 {
@@ -83,11 +107,23 @@ section {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  /* Mobile configurations */
 @media only screen and (max-width:700px) {
+    meta {
+        content: 
+    }
     nav {
         background-color: grey;
     }
-    img {
+    #headshot {
         width: 200px;
         height: 200px;
     }
@@ -100,5 +136,19 @@ section {
     }
     p {
         font-size: 1rem;
+    }
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    #photo_grid {
+        display: none;
+    }
+    #camping_img {
+        max-width: 45%;
+        max-height: 45%;
+        padding-bottom: 5rem;
+        margin-bottom: 2rem;
     }
 }
