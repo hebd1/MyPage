@@ -4,7 +4,6 @@ body {
     overflow-y: scroll; 
 }
 
-
 #main_nav .nav-link {
     color: black;
     padding-right: 30px;
@@ -14,6 +13,7 @@ body {
 h2 {
     color: black;
     font-size: 4rem;
+    font-weight: bold;
 }
 
 i {
@@ -25,10 +25,11 @@ p {
     color: black;
     font-weight: 300;
     margin-top: 3rem;
+    font-weight: bold;
 }
 
 hr	{
-	width: 250px;
+	width: 500px;
 	/*borders here create a shadow beneatht the hr*/
 	border-top: 1px solid black;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -62,6 +63,18 @@ section {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+  }
+
+  #about {
+      border-style: solid;
+      border-color: black;
+      padding: 1rem;
+  }
+
+  #about_mobile {
+    border-style: solid;
+    border-color: black;
+    padding: 1rem;
   }
 
 #section1 {
@@ -102,20 +115,30 @@ section {
 }
 
 /* media queries are used to change content when screen is a certain size  */
+@media screen and (max-width: 1700px) {
+    #about {
+        font-size: 25px;
+    }
+    
+}
+
 @media screen and (max-width: 1500px) {
     #heading h2 {
         font-weight: 100;
         font-size: 1.5rem;
     }
     #about {
-        font-size: 20px;
+        font-size: 18px;
+    }
+    hr {
+        width: 250px;
     }
     
 }
 
 @media screen and (max-width: 1200px){
     #about {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -127,7 +150,18 @@ section {
       max-width: 50%;
     }
     #about {
-        font-size: 20px;
+        font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 880px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 60%;
+    }
+    #about {
+        font-size: 16px;
     }
   }
 
@@ -135,13 +169,10 @@ section {
     #about_mobile {
         display: none;
     }
-    hr {
-        width: 250px;
-    }
 }
 
   /* Mobile configurations */
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:879px) {
     
     nav {
         background-color: grey;
@@ -155,7 +186,7 @@ section {
     }
     h2 {
         padding-top: 1.5rem;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     p {
         font-size: 1rem;
