@@ -2,6 +2,7 @@ body {
     font-family: 'Spectral', serif;
     overflow-x: hidden;
     overflow-y: scroll; 
+    background-color: grey;
 }
 
 #main_nav .nav-link {
@@ -33,6 +34,14 @@ hr	{
 	/*borders here create a shadow beneatht the hr*/
 	border-top: 1px solid black;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+    width: 100%;
+    height: 825px;
+    border: none;
+    margin: 3rem;
+    padding: 1rem;
 }
 
 section {
@@ -214,5 +223,10 @@ section {
     #about_mobile {
         display: flex;
         font-size: 16px;
+    }
+    iframe {
+        height: 600px;
+        padding-top: 5rem;
+        margin-top: 4rem;
     }
 }
