@@ -1,6 +1,7 @@
 body {
     font-family: 'Spectral', serif;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll; 
 }
 
 
@@ -154,8 +155,10 @@ section {
         margin-bottom: 2rem;
     }
     #about {
+        display: none;
+    }
+    #about_mobile {
+        display: block;
         font-size: 16px;
-        content: 'I\'m a computer science major with a passion for solving difficult problems with technology. I love learning both in and out of school. In my free time I enjoy coding mobile android applications and publishing them to the Google Play Store';
-        visibility: visible;
     }
 }
