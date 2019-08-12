@@ -314,6 +314,14 @@ section {
         width: 200px;
         height: 200px;
     }
+    #section2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 10rem;
+        
+    }
     #section3 {
         height: 1800px;
     }
@@ -329,11 +337,13 @@ section {
     }
     .row {
         padding: 1rem;
+        padding-bottom: 5rem;
     }
     .column {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
+        padding-bottom: 3rem;
     }
     #photo_grid {
         display: none;
@@ -341,7 +351,7 @@ section {
     #camping_img {
         max-width: 55%;
         max-height: 55%;
-        padding-bottom: 7rem;
+        padding-bottom: 9rem;
         margin-bottom: 2rem;
     }
     #about {
