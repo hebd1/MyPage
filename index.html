@@ -30,13 +30,13 @@
         <div class="collapse navbar-collapse" id="navbar_toggler">
             <div class="navbar-nav mr-auto">
                 <li>
-                    <a href="#section1" class="nav-item nav-link active">HOME <span class="sr-only">(current)</span></a>
+                    <a href="#section1" class="nav-item nav-link active">HOME            /<span class="sr-only">(current)</span></a>
                 </li>
                 <li>
-                    <a href="#section2" class="nav-item nav-link">ABOUT</a>
+                    <a href="#section2" class="nav-item nav-link">ABOUT             /</a>
                 </li>
                 <li>
-                    <a href="#section3" class="nav-item nav-link">PROJECTS</a>
+                    <a href="#section3" class="nav-item nav-link">PROJECTS            /</a>
                 </li>
                 <li>
                     <a href="#section4" class="nav-item nav-link">RESUME</a>
@@ -57,7 +57,7 @@
                     <div class="col-10 col-lg-8 mb-10 mb-md-0">
                         <h2>Hello There!</h2>
                         <hr>
-                        <p>My name's Eli. I'm a student employee at the Center for High Performance Computing at the University of Utah. This is my online portfolio:)</p>
+                        <p id="intro">My name's Eli. I'm a student employee at the Center for High Performance Computing at the University of Utah. This is my online portfolio:)</p>
                     </div>
                 </div>
             </div>
@@ -100,10 +100,48 @@
         </div>
     </section>
 
-    <section id="section3" class="container-fluid px-0 main">
-        <div class="row align-items-center">
-
-        </div>
+    <section id="section3" class="main">
+            <div id="gallery">
+                    <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-3">
+                                        <div id="project" class="card" style="width: 18rem;">
+                                                <img src="imgs/pattern1.jpeg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">First Thing</h5>
+                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                  <a href="#" class="btn btn-outline-success btn-sm">Download</a>
+                                                  <a href="#" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                                                </div>
+                                              </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-3">
+                                        <div id="project" class="card" style="width: 18rem;">
+                                                <img src="imgs/pattern2.jpeg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Second Thing</h5>
+                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                  <a href="#" class="btn btn-outline-success btn-sm">Download</a>
+                                                  <a href="#" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                                                </div>
+                                              </div>
+                                </div>
+                                  <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-3">
+                                        <div id="project" class="card" style="width: 18rem;">
+                                                <img src="imgs/pattern3.jpeg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Third Thing</h5>
+                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                  <a href="#" class="btn btn-outline-success btn-sm">Download</a>
+                                                  <a href="#" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                                                </div>
+                                              </div>
+                                  </div>
+                                             
+                            </div>
+                        </div>
+                     
+                </div>
     </section>
 
     <section id="section4" class="container-fluid px-0 main">
@@ -111,6 +149,21 @@
             <iframe id="resume" src="https://drive.google.com/file/d/1EljOLs2H9N0Znz_0Kq4VD_mOgBkcrhu-/preview"></iframe>
         </div>
     </section>
+
+    <!-- social media icons -->
+    <div class="row justify-content-center">
+        <hr id="bottom_links">
+        <div style="padding-inline-end: 3rem">
+                <a href="https://github.com/hebd1" class="icon-button github"><i class="fab fa-github"></i><span></span></a>
+        </div>
+        <div style="padding-inline-end: 3rem">
+                <a href="https://www.linkedin.com/in/eli-hebdon-980615156" class="icon-button linkedin"><i class="fab fa-linkedin"></i><span></span></a>
+        </div>
+        <div style="padding-inline-end: 3rem">
+                <a href="https://www.instagram.com/eli_hebdon/" class="icon-button instagram"><i class="fab fa-instagram"></i><span></span></a>
+        </div>
+         <hr id="bottom_links">
+    </div>
 
 
     <!-- Optional JavaScript -->
@@ -154,6 +207,7 @@
         });
     </script>
 
+<!-- scroll to navbar items on click -->
     <script>
         $(function () {
             $(document).scroll(function () {
@@ -162,9 +216,6 @@
             })
         })
     </script>
-
-
-
 
 </body>
 

@@ -2,13 +2,18 @@ body {
     font-family: 'Spectral', serif;
     overflow-x: hidden;
     overflow-y: scroll; 
-    background-color: grey;
+    background-color: white;
 }
+
 
 #main_nav .nav-link {
     color: black;
     padding-right: 30px;
     padding-left: 30px;
+}
+
+a {
+    white-space: pre;
 }
 
 h2 {
@@ -21,7 +26,7 @@ i {
     color: black;
 }
 
-p {
+#intro {
     font-size: 1.75rem;
     color: black;
     font-weight: 300;
@@ -29,11 +34,22 @@ p {
     font-weight: bold;
 }
 
+p {
+    font-size: 1.75rem;
+    color: black;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
 hr	{
 	width: 500px;
 	/*borders here create a shadow beneatht the hr*/
 	border-top: 1px solid black;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+h5 {
+    font-weight: bold;
 }
 
 iframe {
@@ -74,28 +90,51 @@ section {
     width: 100%;
   }
 
+  .container {
+      display: flex;
+      align-items: center;;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 8rem;
+  }
+
+  .card-body {
+      height: 250px;
+  }
+
+.card-text {
+    font-size: 20px;
+}
+
+  #gallery {
+      padding-top: 5rem;
+  }
+
   #about {
-      border-style: solid;
-      border-color: black;
       padding: 1rem;
   }
 
   #about_mobile {
-    border-style: solid;
-    border-color: black;
     padding: 1rem;
+  }
+
+  #project {
+      font-size: 20px;
+      color: black;
   }
 
 #section1 {
     background: url(https://images.unsplash.com/photo-1549321495-305eb13f8aa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
     background-size: cover;
 	background-repeat: no-repeat;
-    /* background-position: center;
-    vertical-align: bottom; */
+    background-attachment: fixed;
+    z-index: 1;
+    
 }
 
 #section2 {
-    background: grey;
+    background: white;
+    z-index: 2;
 }
 
 #section3 {
@@ -103,7 +142,7 @@ section {
 }
 
 #section4 {
-    background: grey;
+    background: white;
 }
 
 /* background change on hover */
@@ -121,6 +160,92 @@ section {
 .navbar.scrolled {
     background: grey;
     transition: background 500ms;
+}
+
+/* social media Icons */
+
+/* Wrapper */
+.icon-button {
+	background-color: white;
+	border-radius: 3.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+    width: 3.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 3.6rem;
+	height: 3.6rem;
+	border-radius: 3.6rem;
+    margin: -1.8rem;
+}
+.fa-github span {
+    background-color: black;
+}
+.fa-linkedin span {
+	background-color: #3B5998;
+}
+.fa-instagram span {
+	background-color: #3f729b;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 3.6rem;
+	left: 0;
+	line-height: 3.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+    width: 3.6rem;
+	z-index: 10;
+}
+.icon-button .fa-github {
+	color: black;
+}
+.icon-button .fa-linkedin {
+	color: #0077B5;
+}
+.icon-button .fa-instagram {
+	color: #3f729b;
+}
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-linkedin,
+.icon-button:hover .fa-github {
+	color: white;
+}
+.icon-button:hover {
+    background-color: #779ecb;
 }
 
 /* media queries are used to change content when screen is a certain size  */
@@ -190,6 +315,9 @@ section {
         width: 200px;
         height: 200px;
     }
+    #section3 {
+        height: 2000px;
+    }
     hr {
         width: 200px;
     }
@@ -212,8 +340,8 @@ section {
         display: none;
     }
     #camping_img {
-        max-width: 45%;
-        max-height: 45%;
+        max-width: 55%;
+        max-height: 55%;
         padding-bottom: 5rem;
         margin-bottom: 2rem;
     }
@@ -224,10 +352,16 @@ section {
         display: flex;
         font-size: 16px;
     }
+    #intro {
+        font-size: 16px;
+    }
     iframe {
         height: 600px;
         padding-top: 5rem;
         margin-top: 4rem;
     }
-   
+    #bottom_links {
+        display: none;
+    }
+
 }
