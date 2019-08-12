@@ -80,7 +80,6 @@ section {
     -ms-flex: 50%; /* IE10 */
     flex: 50%;
     max-width: 50%;
-    padding: 0 2px;
     margin-top: 3rem;
   }
   
@@ -315,6 +314,9 @@ section {
         width: 200px;
         height: 200px;
     }
+    #section2 {
+        justify-content: center;
+    }
     #section3 {
         height: 1800px;
     }
@@ -342,7 +344,7 @@ section {
     #camping_img {
         max-width: 55%;
         max-height: 55%;
-        padding-bottom: 5rem;
+        padding-bottom: 7rem;
         margin-bottom: 2rem;
     }
     #about {
@@ -360,15 +362,15 @@ section {
         padding-top: 5rem;
         margin-top: 4rem;
     }
-    #bottom_links {
+    /* #bottom_link {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
         padding-bottom: 3rem;
-    }
+    } */
     #bottom_div {
-        display: none;
+        width: 75px;
     }
 
 }
