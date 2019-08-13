@@ -3,9 +3,15 @@ body {
     overflow-x: hidden;
     overflow-y: scroll; 
     background-repeat: no-repeat;
-    background-position-y: 65%;
+    background-position-y: 50%;
     z-index: 3;
     
+}
+
+#social_media {
+    bottom: 0;
+    
+    z-index: -5;
 }
 
 
@@ -157,6 +163,14 @@ section {
 
 #section2 {
     z-index: 2;
+    height: 1000px;
+}
+#section3 {
+    height: 1000px;
+}
+#section4 {
+    z-index: 2;
+    height: 1000px;
 }
 
 
@@ -368,7 +382,7 @@ section {
     }
     #about_mobile {
         display: flex;
-        font-size: 16px;
+        font-size: 18px;
     }
     #intro {
         font-size: 16px;
