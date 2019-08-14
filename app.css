@@ -27,7 +27,7 @@ a {
 
 h2 {
     color: black;
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: bold;
 }
 
@@ -36,7 +36,7 @@ i {
 }
 
 #intro {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     color: black;
     font-weight: 300;
     margin-top: 2rem;
@@ -109,6 +109,7 @@ section {
   .card {
       border-style: solid;
       border-color: black;
+      box-shadow: 10px 10px 5px grey;
   }
 
   .card-body {
@@ -134,13 +135,15 @@ section {
 
   #about {
       padding: 1rem;
-      background-color: #779ecb;
+      background-color: white;
       border-style: solid;
       border-color: black;
+      box-shadow: 10px 10px 5px grey;
   }
 
   #about_mobile {
     padding: 1rem;
+    box-shadow: 10px 10px 5px grey;
   }
 
   #project {
@@ -288,7 +291,7 @@ section {
 @media screen and (max-width: 1500px) {
     #heading h2 {
         font-weight: 100;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     #about {
         font-size: 18px;
